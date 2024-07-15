@@ -11,20 +11,20 @@ namespace AlgorithmsSolver
     {
         public int[] TwoSum(int[] nums, int target)
         {
-            HashSet<int> result = new();
+            Dictionary<int, int> store = [];
 
             for (int i = 0; i < nums.Length; i++)
             {
-                var snd = target - nums[i];
-                if (result.Contains(snd))
+                if (store.TryGetValue(nums[i], out int value))
                 {
-                    return;
+                    return [value, i];
                 }
                 else
                 {
-                    result.Add(nums[i]);
+                    store[target - nums[i]] = i;
                 }
             }
+            return null;
         }
     }
 }
