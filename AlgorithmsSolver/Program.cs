@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AlgorithmsSolver;
+using AlgorithmsSolver.Queue;
 
 //Console.WriteLine("Hello, World!");
 //var ts = new TwoSums();
@@ -25,20 +26,28 @@ using AlgorithmsSolver;
 //Console.WriteLine(rds2);
 //Console.WriteLine(string.Join(" ", nums));
 
-var lengthOfLastWordSolver = new LengthOfLastWordSolver();
+//var lengthOfLastWordSolver = new LengthOfLastWordSolver();
 
-var llw1 = lengthOfLastWordSolver.LengthOfLastWord("Hello World");
-Console.WriteLine(llw1);
+//var llw1 = lengthOfLastWordSolver.LengthOfLastWord("Hello World");
+//Console.WriteLine(llw1);
 
-var llw2 = lengthOfLastWordSolver.LengthOfLastWord("   fly me   to   the moon  ");
-Console.WriteLine(llw2);
+//var llw2 = lengthOfLastWordSolver.LengthOfLastWord("   fly me   to   the moon  ");
+//Console.WriteLine(llw2);
 
-var llw3 = lengthOfLastWordSolver.LengthOfLastWord("luffy is still joyboy");
-Console.WriteLine(llw3);
+//var llw3 = lengthOfLastWordSolver.LengthOfLastWord("luffy is still joyboy");
+//Console.WriteLine(llw3);
 
-var llw4 = lengthOfLastWordSolver.LengthOfLastWord("l     ");
-Console.WriteLine(llw4);
+//var llw4 = lengthOfLastWordSolver.LengthOfLastWord("l     ");
+//Console.WriteLine(llw4);
 
-var llw5 = lengthOfLastWordSolver.LengthOfLastWord("l");
-Console.WriteLine(llw5);
+//var llw5 = lengthOfLastWordSolver.LengthOfLastWord("l");
+//Console.WriteLine(llw5);
 
+
+var recentCounter = new RecentCounter();
+List<int> res = new List<int>();
+res.Add(recentCounter.Ping(1));
+res.Add(recentCounter.Ping(2));
+res.Add(recentCounter.Ping(3001));
+res.Add(recentCounter.Ping(3002));
+Console.WriteLine(string.Join(", ", res));
