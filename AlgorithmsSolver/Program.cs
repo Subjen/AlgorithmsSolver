@@ -44,10 +44,19 @@ using AlgorithmsSolver.Queue;
 //Console.WriteLine(llw5);
 
 
-var recentCounter = new RecentCounter();
-List<int> res = new List<int>();
-res.Add(recentCounter.Ping(1));
-res.Add(recentCounter.Ping(2));
-res.Add(recentCounter.Ping(3001));
-res.Add(recentCounter.Ping(3002));
-Console.WriteLine(string.Join(", ", res));
+//var recentCounter = new RecentCounter();
+//List<int> res = new List<int>();
+//res.Add(recentCounter.Ping(1));
+//res.Add(recentCounter.Ping(2));
+//res.Add(recentCounter.Ping(3001));
+//res.Add(recentCounter.Ping(3002));
+//Console.WriteLine(string.Join(", ", res));
+
+
+var countStudentsSolver = new CountStudentsSolver();
+
+var res1 = countStudentsSolver.CountStudents([1, 1, 0, 0], [0, 1, 0, 1]);
+Console.WriteLine(res1);
+
+var res2 = countStudentsSolver.CountStudents([1, 1, 1, 0, 0, 1], [1, 0, 0, 0, 1, 1]);
+Console.WriteLine(res2);
