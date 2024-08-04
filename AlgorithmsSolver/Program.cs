@@ -100,10 +100,17 @@ using AlgorithmsSolver.Stack;
 //    throw new Exception($"Error! Expect {answer3}");
 //Console.WriteLine(sum3);
 
-var solver = new NextGreaterElement1Solver();
+//var solver = new NextGreaterElement1Solver();
 
-var res1 = solver.NextGreaterElement([4, 1, 2], [1, 3, 4, 2]);
-Console.WriteLine(string.Join(", ", res1));
+//var res1 = solver.NextGreaterElement([4, 1, 2], [1, 3, 4, 2]);
+//Console.WriteLine(string.Join(", ", res1));
 
-var res2 = solver.NextGreaterElement([2, 4], [1, 2, 3, 4]);
-Console.WriteLine(string.Join(", ", res2));
+//var res2 = solver.NextGreaterElement([2, 4], [1, 2, 3, 4]);
+//Console.WriteLine(string.Join(", ", res2));
+
+var solver = new ReorderListSolver();
+var node1 = solver.Build([1, 2, 3, 4]);
+solver.ReorderList(node1);
+
+var node2 = solver.Build([1, 2, 3, 4, 5]);
+solver.ReorderList(node2);
