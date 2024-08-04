@@ -3,6 +3,7 @@ using AlgorithmsSolver;
 using AlgorithmsSolver.Queue;
 using AlgorithmsSolver.Queue.DynamicProgramming;
 using AlgorithmsSolver.Stack;
+using AlgorithmsSolver.TwoPointers;
 
 //Console.WriteLine("Hello, World!");
 //var ts = new TwoSums();
@@ -108,9 +109,22 @@ using AlgorithmsSolver.Stack;
 //var res2 = solver.NextGreaterElement([2, 4], [1, 2, 3, 4]);
 //Console.WriteLine(string.Join(", ", res2));
 
-var solver = new ReorderListSolver();
-var node1 = solver.Build([1, 2, 3, 4]);
-solver.ReorderList(node1);
+//var solver = new ReorderListSolver();
+//var node1 = solver.Build([1, 2, 3, 4]);
+//solver.ReorderList(node1);
 
-var node2 = solver.Build([1, 2, 3, 4, 5]);
-solver.ReorderList(node2);
+//var node2 = solver.Build([1, 2, 3, 4, 5]);
+//solver.ReorderList(node2);
+
+
+var solver = new RemoveElementSolver();
+
+var arr1 = new int[] { 3, 2, 2, 3 };
+var res1 = solver.RemoveElement(arr1, 3);
+Console.WriteLine(res1);
+Console.WriteLine(string.Join(", ", arr1));
+
+var arr2 = new int[] { 0, 1, 2, 2, 3, 0, 4, 2 };
+var res2 = solver.RemoveElement(arr2, 2);
+Console.WriteLine(res2);
+Console.WriteLine(string.Join(", ", arr2));
