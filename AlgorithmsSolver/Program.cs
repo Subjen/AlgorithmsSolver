@@ -117,14 +117,26 @@ using AlgorithmsSolver.TwoPointers;
 //solver.ReorderList(node2);
 
 
-var solver = new RemoveElementSolver();
+//var solver = new RemoveElementSolver();
 
-var arr1 = new int[] { 3, 2, 2, 3 };
-var res1 = solver.RemoveElement(arr1, 3);
+//var arr1 = new int[] { 3, 2, 2, 3 };
+//var res1 = solver.RemoveElement(arr1, 3);
+//Console.WriteLine(res1);
+//Console.WriteLine(string.Join(", ", arr1));
+
+//var arr2 = new int[] { 0, 1, 2, 2, 3, 0, 4, 2 };
+//var res2 = solver.RemoveElement(arr2, 2);
+//Console.WriteLine(res2);
+//Console.WriteLine(string.Join(", ", arr2));
+
+
+var solver = new HappyNumberSolver();
+
+var res1 = solver.IsHappy(10);
 Console.WriteLine(res1);
-Console.WriteLine(string.Join(", ", arr1));
 
-var arr2 = new int[] { 0, 1, 2, 2, 3, 0, 4, 2 };
-var res2 = solver.RemoveElement(arr2, 2);
+var res2 = solver.IsHappy(19);
 Console.WriteLine(res2);
-Console.WriteLine(string.Join(", ", arr2));
+
+var res3 = solver.IsHappy(2);
+Console.WriteLine(res3);
