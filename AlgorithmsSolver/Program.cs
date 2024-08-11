@@ -130,13 +130,27 @@ using AlgorithmsSolver.TwoPointers;
 //Console.WriteLine(string.Join(", ", arr2));
 
 
-var solver = new HappyNumberSolver();
+//var solver = new HappyNumberSolver();
 
-var res1 = solver.IsHappy(10);
-Console.WriteLine(res1);
+//var res1 = solver.IsHappy(10);
+//Console.WriteLine(res1);
 
-var res2 = solver.IsHappy(19);
-Console.WriteLine(res2);
+//var res2 = solver.IsHappy(19);
+//Console.WriteLine(res2);
 
-var res3 = solver.IsHappy(2);
-Console.WriteLine(res3);
+//var res3 = solver.IsHappy(2);
+//Console.WriteLine(res3);
+
+var solver = new SortColorsSolver();
+
+var nums1 = new int[] { 2, 0, 2, 1, 1, 0 };
+solver.SortColors(nums1);
+Console.WriteLine(string.Join(", ", nums1));
+
+var nums2 = new int[] { 2, 0, 1 };
+solver.SortColors(nums2);
+Console.WriteLine(string.Join(", ", nums2));
+
+var nums3 = new int[] { 1, 2, 0 };
+solver.SortColors(nums3);
+Console.WriteLine(string.Join(", ", nums3));
