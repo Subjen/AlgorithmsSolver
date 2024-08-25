@@ -3,6 +3,7 @@ using AlgorithmsSolver;
 using AlgorithmsSolver.Queue;
 using AlgorithmsSolver.Queue.DynamicProgramming;
 using AlgorithmsSolver.Stack;
+using AlgorithmsSolver.TreeNode.Binary;
 using AlgorithmsSolver.TwoPointers;
 
 //Console.WriteLine("Hello, World!");
@@ -141,16 +142,24 @@ using AlgorithmsSolver.TwoPointers;
 //var res3 = solver.IsHappy(2);
 //Console.WriteLine(res3);
 
-var solver = new SortColorsSolver();
+//var solver = new SortColorsSolver();
 
-var nums1 = new int[] { 2, 0, 2, 1, 1, 0 };
-solver.SortColors(nums1);
-Console.WriteLine(string.Join(", ", nums1));
+//var nums1 = new int[] { 2, 0, 2, 1, 1, 0 };
+//solver.SortColors(nums1);
+//Console.WriteLine(string.Join(", ", nums1));
 
-var nums2 = new int[] { 2, 0, 1 };
-solver.SortColors(nums2);
-Console.WriteLine(string.Join(", ", nums2));
+//var nums2 = new int[] { 2, 0, 1 };
+//solver.SortColors(nums2);
+//Console.WriteLine(string.Join(", ", nums2));
 
-var nums3 = new int[] { 1, 2, 0 };
-solver.SortColors(nums3);
-Console.WriteLine(string.Join(", ", nums3));
+//var nums3 = new int[] { 1, 2, 0 };
+//solver.SortColors(nums3);
+//Console.WriteLine(string.Join(", ", nums3));
+
+var converter = new SortedArrayToBinarySearchTreeConverter();
+
+var node1 = converter.SortedArrayToBST([-10, -3, 0, 5, 9]);
+Console.WriteLine(node1);
+
+var node2 = converter.SortedArrayToBST([1, 3]);
+Console.WriteLine(node2);
