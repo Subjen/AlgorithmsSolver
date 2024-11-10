@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AlgorithmsSolver;
+using AlgorithmsSolver.HashTable;
 using AlgorithmsSolver.Queue;
 using AlgorithmsSolver.Queue.DynamicProgramming;
 using AlgorithmsSolver.Stack;
@@ -156,10 +157,25 @@ using AlgorithmsSolver.TwoPointers;
 //solver.SortColors(nums3);
 //Console.WriteLine(string.Join(", ", nums3));
 
-var converter = new SortedArrayToBinarySearchTreeConverter();
+//var converter = new SortedArrayToBinarySearchTreeConverter();
 
-var node1 = converter.SortedArrayToBST([-10, -3, 0, 5, 9]);
-Console.WriteLine(node1);
+//var node1 = converter.SortedArrayToBST([-10, -3, 0, 5, 9]);
+//Console.WriteLine(node1);
 
-var node2 = converter.SortedArrayToBST([1, 3]);
-Console.WriteLine(node2);
+//var node2 = converter.SortedArrayToBST([1, 3]);
+//Console.WriteLine(node2);
+
+var solver = new SubstringWithConcatenationOfAllWordsSolver();
+
+var res4 = solver.FindSubstring("wordgoodgoodgoodbestword", ["word", "good", "best", "good"]);
+Console.WriteLine(string.Join(", ", res4));
+
+var res1 = solver.FindSubstring("barfoothefoobarman", ["foo", "bar"]);
+Console.WriteLine(string.Join(", ", res1));
+
+var res2 = solver.FindSubstring("wordgoodgoodgoodbestword", ["word", "good", "best", "word"]);
+Console.WriteLine(string.Join(", ", res2));
+
+
+var res3 = solver.FindSubstring("barfoofoobarthefoobarman", ["bar", "foo", "the"]);
+Console.WriteLine(string.Join(", ", res3));
