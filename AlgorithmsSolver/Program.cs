@@ -165,17 +165,29 @@ using AlgorithmsSolver.TwoPointers;
 //var node2 = converter.SortedArrayToBST([1, 3]);
 //Console.WriteLine(node2);
 
-var solver = new SubstringWithConcatenationOfAllWordsSolver();
+//var solver = new SubstringWithConcatenationOfAllWordsSolver();
 
-var res4 = solver.FindSubstring("wordgoodgoodgoodbestword", ["word", "good", "best", "good"]);
-Console.WriteLine(string.Join(", ", res4));
+//var res4 = solver.FindSubstring("wordgoodgoodgoodbestword", ["word", "good", "best", "good"]);
+//Console.WriteLine(string.Join(", ", res4));
 
-var res1 = solver.FindSubstring("barfoothefoobarman", ["foo", "bar"]);
-Console.WriteLine(string.Join(", ", res1));
+//var res1 = solver.FindSubstring("barfoothefoobarman", ["foo", "bar"]);
+//Console.WriteLine(string.Join(", ", res1));
 
-var res2 = solver.FindSubstring("wordgoodgoodgoodbestword", ["word", "good", "best", "word"]);
-Console.WriteLine(string.Join(", ", res2));
+//var res2 = solver.FindSubstring("wordgoodgoodgoodbestword", ["word", "good", "best", "word"]);
+//Console.WriteLine(string.Join(", ", res2));
 
 
-var res3 = solver.FindSubstring("barfoofoobarthefoobarman", ["bar", "foo", "the"]);
-Console.WriteLine(string.Join(", ", res3));
+//var res3 = solver.FindSubstring("barfoofoobarthefoobarman", ["bar", "foo", "the"]);
+//Console.WriteLine(string.Join(", ", res3));
+
+
+var solver = new FirstMissingPositiveSolver();
+
+var res1 = solver.FirstMissingPositive([1, 2, 0]);
+Console.WriteLine(res1);
+
+var res2 = solver.FirstMissingPositive([3, 4, -1, 1]);
+Console.WriteLine(res2);
+
+var res3 = solver.FirstMissingPositive([7, 8, 9, 11, 12]);
+Console.WriteLine(res3);
