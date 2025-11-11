@@ -252,15 +252,22 @@ using AlgorithmsSolver.TwoPointers;
 //);
 //Console.WriteLine(res4);
 
-var solver = new AddTwoNumbersSolver();
-//int[] arr1 = [2, 4, 3];
-//int[] arr2 = [5, 6, 4];
-//int[] arr1 = [0];
-//int[] arr2 = [0];
-int[] arr1 = [9, 9, 9, 9, 9, 9, 9];
-int[] arr2 = [9, 9, 9, 9];
+//var solver = new AddTwoNumbersSolver();
+////int[] arr1 = [2, 4, 3];
+////int[] arr2 = [5, 6, 4];
+////int[] arr1 = [0];
+////int[] arr2 = [0];
+//int[] arr1 = [9, 9, 9, 9, 9, 9, 9];
+//int[] arr2 = [9, 9, 9, 9];
 
-var l1 = solver.Build(arr1);
-var l2 = solver.Build(arr2);
-var res = solver.AddTwoNumbers(l1, l2);
+//var l1 = solver.Build(arr1);
+//var l2 = solver.Build(arr2);
+//var res = solver.AddTwoNumbers(l1, l2);
+
+var solver = new ReverseLinkedListSolver();
+
+int[] arr = [1, 2, 3, 4];
+var list = solver.Build(arr);
+var res = solver.ReverseList(list);
+
 ;
