@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AlgorithmsSolver;
 using AlgorithmsSolver.HashTable;
+using AlgorithmsSolver.LinkedList;
 using AlgorithmsSolver.Queue;
 using AlgorithmsSolver.Queue.DynamicProgramming;
 using AlgorithmsSolver.Stack;
@@ -192,61 +193,74 @@ using AlgorithmsSolver.TwoPointers;
 //var res3 = solver.FirstMissingPositive([7, 8, 9, 11, 12]);
 //Console.WriteLine(res3);
 
-var solver = new BinaryTreeCamerasSolver();
+//var solver = new BinaryTreeCamerasSolver();
 
-var res1 = solver.MinCameraCover(new TreeNode(0, new TreeNode(0, new TreeNode(0), new TreeNode(0))));
-Console.WriteLine(res1);
+//var res1 = solver.MinCameraCover(new TreeNode(0, new TreeNode(0, new TreeNode(0), new TreeNode(0))));
+//Console.WriteLine(res1);
 
-var res2 = solver.MinCameraCover(
-    new TreeNode(0,
-        new TreeNode(0,
-            new TreeNode(0,
-                new TreeNode(0, null, new TreeNode(0))
-            )
-        )
-    )
-);
-Console.WriteLine(res2);
+//var res2 = solver.MinCameraCover(
+//    new TreeNode(0,
+//        new TreeNode(0,
+//            new TreeNode(0,
+//                new TreeNode(0, null, new TreeNode(0))
+//            )
+//        )
+//    )
+//);
+//Console.WriteLine(res2);
 
-var res3 = solver.MinCameraCover(
-    new TreeNode(0,
-        new TreeNode(0,
-            new TreeNode(0,
-                null,
-                new TreeNode(0,
-                    new TreeNode(0),
-                    new TreeNode(0)
-                )
-            ),
-            new TreeNode(0)
-        ),
-        new TreeNode(0, 
-            null,
-            new TreeNode(0,
-                new TreeNode(0),
-                new TreeNode(0)
-            )
-        )
-    )
-);
-Console.WriteLine(res3);
+//var res3 = solver.MinCameraCover(
+//    new TreeNode(0,
+//        new TreeNode(0,
+//            new TreeNode(0,
+//                null,
+//                new TreeNode(0,
+//                    new TreeNode(0),
+//                    new TreeNode(0)
+//                )
+//            ),
+//            new TreeNode(0)
+//        ),
+//        new TreeNode(0, 
+//            null,
+//            new TreeNode(0,
+//                new TreeNode(0),
+//                new TreeNode(0)
+//            )
+//        )
+//    )
+//);
+//Console.WriteLine(res3);
 
-var res4 = solver.MinCameraCover(
-    new TreeNode(0,
-        new TreeNode(0,
-            new TreeNode(0,
-                null,
-                new TreeNode(0)
-            ),
-            new TreeNode(0)
-        ),
-        new TreeNode(0,
-            null,
-            new TreeNode(0,
-                new TreeNode(0),
-                new TreeNode(0)
-            )
-        )
-    )
-);
-Console.WriteLine(res4);
+//var res4 = solver.MinCameraCover(
+//    new TreeNode(0,
+//        new TreeNode(0,
+//            new TreeNode(0,
+//                null,
+//                new TreeNode(0)
+//            ),
+//            new TreeNode(0)
+//        ),
+//        new TreeNode(0,
+//            null,
+//            new TreeNode(0,
+//                new TreeNode(0),
+//                new TreeNode(0)
+//            )
+//        )
+//    )
+//);
+//Console.WriteLine(res4);
+
+var solver = new AddTwoNumbersSolver();
+//int[] arr1 = [2, 4, 3];
+//int[] arr2 = [5, 6, 4];
+//int[] arr1 = [0];
+//int[] arr2 = [0];
+int[] arr1 = [9, 9, 9, 9, 9, 9, 9];
+int[] arr2 = [9, 9, 9, 9];
+
+var l1 = solver.Build(arr1);
+var l2 = solver.Build(arr2);
+var res = solver.AddTwoNumbers(l1, l2);
+;
