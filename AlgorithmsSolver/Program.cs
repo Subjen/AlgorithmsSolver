@@ -181,13 +181,72 @@ using AlgorithmsSolver.TwoPointers;
 //Console.WriteLine(string.Join(", ", res3));
 
 
-var solver = new FirstMissingPositiveSolver();
+//var solver = new FirstMissingPositiveSolver();
 
-var res1 = solver.FirstMissingPositive([1, 2, 0]);
+//var res1 = solver.FirstMissingPositive([1, 2, 0]);
+//Console.WriteLine(res1);
+
+//var res2 = solver.FirstMissingPositive([3, 4, -1, 1]);
+//Console.WriteLine(res2);
+
+//var res3 = solver.FirstMissingPositive([7, 8, 9, 11, 12]);
+//Console.WriteLine(res3);
+
+var solver = new BinaryTreeCamerasSolver();
+
+var res1 = solver.MinCameraCover(new TreeNode(0, new TreeNode(0, new TreeNode(0), new TreeNode(0))));
 Console.WriteLine(res1);
 
-var res2 = solver.FirstMissingPositive([3, 4, -1, 1]);
+var res2 = solver.MinCameraCover(
+    new TreeNode(0,
+        new TreeNode(0,
+            new TreeNode(0,
+                new TreeNode(0, null, new TreeNode(0))
+            )
+        )
+    )
+);
 Console.WriteLine(res2);
 
-var res3 = solver.FirstMissingPositive([7, 8, 9, 11, 12]);
+var res3 = solver.MinCameraCover(
+    new TreeNode(0,
+        new TreeNode(0,
+            new TreeNode(0,
+                null,
+                new TreeNode(0,
+                    new TreeNode(0),
+                    new TreeNode(0)
+                )
+            ),
+            new TreeNode(0)
+        ),
+        new TreeNode(0, 
+            null,
+            new TreeNode(0,
+                new TreeNode(0),
+                new TreeNode(0)
+            )
+        )
+    )
+);
 Console.WriteLine(res3);
+
+var res4 = solver.MinCameraCover(
+    new TreeNode(0,
+        new TreeNode(0,
+            new TreeNode(0,
+                null,
+                new TreeNode(0)
+            ),
+            new TreeNode(0)
+        ),
+        new TreeNode(0,
+            null,
+            new TreeNode(0,
+                new TreeNode(0),
+                new TreeNode(0)
+            )
+        )
+    )
+);
+Console.WriteLine(res4);
