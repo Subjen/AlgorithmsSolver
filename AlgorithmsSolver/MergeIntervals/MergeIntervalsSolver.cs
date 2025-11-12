@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgorithmsSolver.MergeIntervals
 {
+    //https://leetcode.com/problems/merge-intervals/description/
     internal class MergeIntervalsSolver
     {
         public int[][] Merge(int[][] intervals)
