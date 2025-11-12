@@ -2,6 +2,7 @@
 using AlgorithmsSolver;
 using AlgorithmsSolver.HashTable;
 using AlgorithmsSolver.LinkedList;
+using AlgorithmsSolver.MergeIntervals;
 using AlgorithmsSolver.Queue;
 using AlgorithmsSolver.Queue.DynamicProgramming;
 using AlgorithmsSolver.Stack;
@@ -272,9 +273,17 @@ using System.Net.Http.Headers;
 //var list = solver.Build(arr);
 //var res = solver.ReverseList(list);
 
-var solver = new DailyTemperaturesSolver();
+//var solver = new DailyTemperaturesSolver();
 
-//int[] arr = [73, 74, 75, 71, 69, 72, 76, 73];
-int[] arr = [30, 40, 50, 60];
-var res = solver.DailyTemperatures(arr);
+////int[] arr = [73, 74, 75, 71, 69, 72, 76, 73];
+//int[] arr = [30, 40, 50, 60];
+//var res = solver.DailyTemperatures(arr);
+
+
+var solver = new MergeIntervalsSolver();
+//int[][] arr = [[1, 3], [2, 6], [8, 10], [15, 18]];
+int[][] arr = [[4, 7], [1, 4]];
+var res = solver.Merge(arr);
+
+
 ;
