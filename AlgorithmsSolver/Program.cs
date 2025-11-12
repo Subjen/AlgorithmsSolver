@@ -286,9 +286,32 @@ using System.Net.Http.Headers;
 //int[][] arr = [[4, 7], [1, 4]];
 //var res = solver.Merge(arr);
 
-var solver = new SearchInRotatedSortedArraySolver();
-int[] arr = [0];
-var target = 0;
-var res = solver.Search(arr, target);
-Console.WriteLine(res);
+//var solver = new SearchInRotatedSortedArraySolver();
+//int[] arr = [0];
+//var target = 0;
+//var res = solver.Search(arr, target);
+//Console.WriteLine(res);
+
+var solver = new PathSum2Solver();
+
+var res1 = solver.PathSum(
+    new TreeNode(5,
+        new TreeNode(4,
+            new TreeNode(11,
+                new TreeNode(7),
+                new TreeNode(2)
+                
+            ),
+            null
+        ),
+        new TreeNode(8,
+            new TreeNode(13),
+            new TreeNode(4,
+                new TreeNode(5),
+                new TreeNode(1)
+            )
+        )
+    ),
+    22
+);
 ;
