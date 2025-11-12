@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AlgorithmsSolver;
+using AlgorithmsSolver.BinarySearch;
 using AlgorithmsSolver.HashTable;
 using AlgorithmsSolver.LinkedList;
 using AlgorithmsSolver.MergeIntervals;
@@ -280,10 +281,14 @@ using System.Net.Http.Headers;
 //var res = solver.DailyTemperatures(arr);
 
 
-var solver = new MergeIntervalsSolver();
-//int[][] arr = [[1, 3], [2, 6], [8, 10], [15, 18]];
-int[][] arr = [[4, 7], [1, 4]];
-var res = solver.Merge(arr);
+//var solver = new MergeIntervalsSolver();
+////int[][] arr = [[1, 3], [2, 6], [8, 10], [15, 18]];
+//int[][] arr = [[4, 7], [1, 4]];
+//var res = solver.Merge(arr);
 
-
+var solver = new SearchInRotatedSortedArraySolver();
+int[] arr = [0];
+var target = 0;
+var res = solver.Search(arr, target);
+Console.WriteLine(res);
 ;
