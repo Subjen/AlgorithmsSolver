@@ -5,8 +5,10 @@ using AlgorithmsSolver.LinkedList;
 using AlgorithmsSolver.Queue;
 using AlgorithmsSolver.Queue.DynamicProgramming;
 using AlgorithmsSolver.Stack;
+using AlgorithmsSolver.Stack.MonotonicStack;
 using AlgorithmsSolver.TreeNode.Binary;
 using AlgorithmsSolver.TwoPointers;
+using System.Net.Http.Headers;
 
 //Console.WriteLine("Hello, World!");
 //var ts = new TwoSums();
@@ -264,10 +266,15 @@ using AlgorithmsSolver.TwoPointers;
 //var l2 = solver.Build(arr2);
 //var res = solver.AddTwoNumbers(l1, l2);
 
-var solver = new ReverseLinkedListSolver();
+//var solver = new ReverseLinkedListSolver();
 
-int[] arr = [1, 2, 3, 4];
-var list = solver.Build(arr);
-var res = solver.ReverseList(list);
+//int[] arr = [1, 2, 3, 4];
+//var list = solver.Build(arr);
+//var res = solver.ReverseList(list);
 
+var solver = new DailyTemperaturesSolver();
+
+//int[] arr = [73, 74, 75, 71, 69, 72, 76, 73];
+int[] arr = [30, 40, 50, 60];
+var res = solver.DailyTemperatures(arr);
 ;
