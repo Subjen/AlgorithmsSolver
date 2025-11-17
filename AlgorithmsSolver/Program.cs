@@ -11,6 +11,7 @@ using AlgorithmsSolver.Stack;
 using AlgorithmsSolver.Stack.MonotonicStack;
 using AlgorithmsSolver.TreeNode.Binary;
 using AlgorithmsSolver.TwoPointers;
+using AlgorithmsSolver.PriorityQueue;
 using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -348,19 +349,29 @@ using System.Text.Json.Serialization;
 
 //dict[key] = 3;
 
-var solver = new NumberOflandsSolver();
+//var solver = new NumberOflandsSolver();
+////char[][] grid = [
+////  ['1','1','1','1','0'],
+////  ['1','1','0','1','0'],
+////  ['1','1','0','0','0'],
+////  ['0','0','0','0','0']
+////];
 //char[][] grid = [
-//  ['1','1','1','1','0'],
-//  ['1','1','0','1','0'],
 //  ['1','1','0','0','0'],
-//  ['0','0','0','0','0']
+//  ['1','1','0','0','0'],
+//  ['0','0','1','0','0'],
+//  ['0','0','0','1','1']
 //];
-char[][] grid = [
-  ['1','1','0','0','0'],
-  ['1','1','0','0','0'],
-  ['0','0','1','0','0'],
-  ['0','0','0','1','1']
-];
-var res = solver.NumIslands(grid);
-Console.WriteLine(res);
+//var res = solver.NumIslands(grid);
+//Console.WriteLine(res);
+
+var solver = new MergeKSortedListsSolver();
+
+var list1 = solver.Build([1, 4, 5]);
+var list2 = solver.Build([1, 3, 4]);
+var list3 = solver.Build([2, 6]);
+
+//var list1 = solver.Build([]);
+
+var res = solver.MergeKLists([list1, list2, list3]);
 ;
