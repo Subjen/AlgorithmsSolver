@@ -378,10 +378,15 @@ using System.Text.Json.Serialization;
 //var solver = new GuessNumberHigherOrLowerSolver(1702766719);
 //var res = solver.GuessNumber(int.MaxValue);
 
-var solver = new SearchInRotatedSortedArray2Solver();
-int[] arr = [2, 5, 6, 0, 0, 1, 2];
-var target = 2;
-//int[] arr = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1];
-//var target = 3;
-var res = solver.Search(arr, target);
+//var solver = new SearchInRotatedSortedArray2Solver();
+//int[] arr = [2, 5, 6, 0, 0, 1, 2];
+//var target = 2;
+////int[] arr = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1];
+////var target = 3;
+//var res = solver.Search(arr, target);
+
+var solver = new GroupAnagramsSolver();
+
+//var res = solver.GroupAnagrams([""]);
+var res = solver.GroupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]); //[["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
 ;
