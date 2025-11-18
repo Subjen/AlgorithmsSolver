@@ -365,13 +365,16 @@ using System.Text.Json.Serialization;
 //var res = solver.NumIslands(grid);
 //Console.WriteLine(res);
 
-var solver = new MergeKSortedListsSolver();
+//var solver = new MergeKSortedListsSolver();
 
-var list1 = solver.Build([1, 4, 5]);
-var list2 = solver.Build([1, 3, 4]);
-var list3 = solver.Build([2, 6]);
+//var list1 = solver.Build([1, 4, 5]);
+//var list2 = solver.Build([1, 3, 4]);
+//var list3 = solver.Build([2, 6]);
 
-//var list1 = solver.Build([]);
+////var list1 = solver.Build([]);
 
-var res = solver.MergeKLists([list1, list2, list3]);
+//var res = solver.MergeKLists([list1, list2, list3]);
+
+var solver = new GuessNumberHigherOrLowerSolver(1702766719);
+var res = solver.GuessNumber(int.MaxValue);
 ;
