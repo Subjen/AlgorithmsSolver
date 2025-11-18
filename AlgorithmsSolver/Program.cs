@@ -375,6 +375,13 @@ using System.Text.Json.Serialization;
 
 //var res = solver.MergeKLists([list1, list2, list3]);
 
-var solver = new GuessNumberHigherOrLowerSolver(1702766719);
-var res = solver.GuessNumber(int.MaxValue);
+//var solver = new GuessNumberHigherOrLowerSolver(1702766719);
+//var res = solver.GuessNumber(int.MaxValue);
+
+var solver = new SearchInRotatedSortedArray2Solver();
+int[] arr = [2, 5, 6, 0, 0, 1, 2];
+var target = 2;
+//int[] arr = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1];
+//var target = 3;
+var res = solver.Search(arr, target);
 ;
