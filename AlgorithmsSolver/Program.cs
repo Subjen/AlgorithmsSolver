@@ -15,6 +15,7 @@ using AlgorithmsSolver.PriorityQueue;
 using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using AlgorithmsSolver.Dictionary;
 
 //Console.WriteLine("Hello, World!");
 //var ts = new TwoSums();
@@ -385,8 +386,15 @@ using System.Text.Json.Serialization;
 ////var target = 3;
 //var res = solver.Search(arr, target);
 
-var solver = new GroupAnagramsSolver();
+//var solver = new GroupAnagramsSolver();
 
-//var res = solver.GroupAnagrams([""]);
-var res = solver.GroupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]); //[["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
-;
+////var res = solver.GroupAnagrams([""]);
+//var res = solver.GroupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]); //[["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
+//;
+
+
+var solver = new FindAllAnagramsInStringSolver();
+
+var res = solver.FindAnagrams("cbaebabacd", "abc");
+var res2 = solver.FindAnagrams("abab", "ab");
+    ;
