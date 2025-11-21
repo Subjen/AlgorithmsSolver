@@ -393,8 +393,17 @@ using AlgorithmsSolver.Dictionary;
 //;
 
 
-var solver = new FindAllAnagramsInStringSolver();
+//var solver = new FindAllAnagramsInStringSolver();
 
-var res = solver.FindAnagrams("cbaebabacd", "abc");
-var res2 = solver.FindAnagrams("abab", "ab");
+//var res = solver.FindAnagrams("cbaebabacd", "abc");
+//var res2 = solver.FindAnagrams("abab", "ab");
+
+var solver = new RemoveInvalidParenthesesSolver();
+
+var res0 = solver.RemoveInvalidParentheses("n");
+var res4 = solver.RemoveInvalidParentheses("(n)");
+
+var res1 = solver.RemoveInvalidParentheses("()())()");
+var res2 = solver.RemoveInvalidParentheses("(a)())()");
+var res3 = solver.RemoveInvalidParentheses(")(");
     ;
