@@ -398,12 +398,28 @@ using AlgorithmsSolver.Dictionary;
 //var res = solver.FindAnagrams("cbaebabacd", "abc");
 //var res2 = solver.FindAnagrams("abab", "ab");
 
-var solver = new RemoveInvalidParenthesesSolver();
+//var solver = new RemoveInvalidParenthesesSolver();
 
-var res0 = solver.RemoveInvalidParentheses("n");
-var res4 = solver.RemoveInvalidParentheses("(n)");
+//var res0 = solver.RemoveInvalidParentheses("n");
+//var res4 = solver.RemoveInvalidParentheses("(n)");
 
-var res1 = solver.RemoveInvalidParentheses("()())()");
-var res2 = solver.RemoveInvalidParentheses("(a)())()");
-var res3 = solver.RemoveInvalidParentheses(")(");
-    ;
+//var res1 = solver.RemoveInvalidParentheses("()())()");
+//var res2 = solver.RemoveInvalidParentheses("(a)())()");
+//var res3 = solver.RemoveInvalidParentheses(")(");
+
+
+var solver = new TopKFrequentWordsSolver();
+
+var res = solver.TopKFrequent(["i", "love", "leetcode", "i", "love", "coding"], 2);
+var res2 = solver.TopKFrequent(["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], 4);
+int x = 0, y = 1;
+Console.WriteLine(x.CompareTo(y));
+x = 1;
+Console.WriteLine(x.CompareTo(y));
+x = 2;
+Console.WriteLine(x.CompareTo(y));
+
+string a = "a", b = "b";
+Console.WriteLine(a.CompareTo(b));
+
+;
