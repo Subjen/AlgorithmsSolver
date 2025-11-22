@@ -422,9 +422,13 @@ using AlgorithmsSolver.Dictionary;
 //string a = "a", b = "b";
 //Console.WriteLine(a.CompareTo(b));
 
-var solver = new TopKFrequentElementsSolver();
-var res1 = solver.TopKFrequent([1, 1, 1, 2, 2, 3], 2);
-var res2 = solver.TopKFrequent([1], 1);
-var res3 = solver.TopKFrequent([1, 2, 1, 2, 1, 2, 3, 1, 3, 2], 2);
+//var solver = new TopKFrequentElementsSolver();
+//var res1 = solver.TopKFrequent([1, 1, 1, 2, 2, 3], 2);
+//var res2 = solver.TopKFrequent([1], 1);
+//var res3 = solver.TopKFrequent([1, 2, 1, 2, 1, 2, 3, 1, 3, 2], 2);
 
+var solver = new PartitionLabelsSolver();
+var res1 = solver.PartitionLabels("ababcbacadefegdehijhklij");
+var res2 = solver.PartitionLabels("eccbbbbdec");
+var res3 = solver.PartitionLabels("eccbbbbdecftt");
 ;
