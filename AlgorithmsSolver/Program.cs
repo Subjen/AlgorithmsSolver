@@ -408,18 +408,23 @@ using AlgorithmsSolver.Dictionary;
 //var res3 = solver.RemoveInvalidParentheses(")(");
 
 
-var solver = new TopKFrequentWordsSolver();
+//var solver = new TopKFrequentWordsSolver();
 
-var res = solver.TopKFrequent(["i", "love", "leetcode", "i", "love", "coding"], 2);
-var res2 = solver.TopKFrequent(["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], 4);
-int x = 0, y = 1;
-Console.WriteLine(x.CompareTo(y));
-x = 1;
-Console.WriteLine(x.CompareTo(y));
-x = 2;
-Console.WriteLine(x.CompareTo(y));
+//var res = solver.TopKFrequent(["i", "love", "leetcode", "i", "love", "coding"], 2);
+//var res2 = solver.TopKFrequent(["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], 4);
+//int x = 0, y = 1;
+//Console.WriteLine(x.CompareTo(y));
+//x = 1;
+//Console.WriteLine(x.CompareTo(y));
+//x = 2;
+//Console.WriteLine(x.CompareTo(y));
 
-string a = "a", b = "b";
-Console.WriteLine(a.CompareTo(b));
+//string a = "a", b = "b";
+//Console.WriteLine(a.CompareTo(b));
+
+var solver = new TopKFrequentElementsSolver();
+var res1 = solver.TopKFrequent([1, 1, 1, 2, 2, 3], 2);
+var res2 = solver.TopKFrequent([1], 1);
+var res3 = solver.TopKFrequent([1, 2, 1, 2, 1, 2, 3, 1, 3, 2], 2);
 
 ;
