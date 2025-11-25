@@ -444,7 +444,13 @@ using AlgorithmsSolver.Dictionary;
 //var res7 = solver.MedianSlidingWindow([1, 2], 1);
 //var res8 = solver.MedianSlidingWindow([6, 5, 9, 5, 4, 9, 1, 7, 5, 5], 4);
 
-var solver = new SlidingWindowMaximumSolver();
-var res1 = solver.MaxSlidingWindow([1, 3, -1, -3, 5, 3, 6, 7], 3);
-var res2 = solver.MaxSlidingWindow([1], 1);
+//var solver = new SlidingWindowMaximumSolver();
+//var res1 = solver.MaxSlidingWindow([1, 3, -1, -3, 5, 3, 6, 7], 3);
+//var res2 = solver.MaxSlidingWindow([1], 1);
+
+var solver = new LongestRepeatingCharacterReplacementSolver();
+var res1 = solver.CharacterReplacement("ABAB", 1);
+var res2 = solver.CharacterReplacement("ABAB", 2);
+var res3 = solver.CharacterReplacement("AABABBA", 2);
+var res4 = solver.CharacterReplacement("ABAA", 0);
 ;
