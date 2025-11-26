@@ -553,45 +553,69 @@ using AlgorithmsSolver.Dictionary;
 //);
 //var res5 = solver.IsSameTree(p5, q5);
 
-var solver = new SymmetricTreeSolver();
-var res1 = solver.IsSymmetric(new TreeNode(2));
+//var solver = new SymmetricTreeSolver();
+//var res1 = solver.IsSymmetric(new TreeNode(2));
 
-var p2 = new TreeNode(2,
-    new TreeNode(5),
-    new TreeNode(6));
+//var p2 = new TreeNode(2,
+//    new TreeNode(5),
+//    new TreeNode(6));
 
-var res2 = solver.IsSymmetric(p2);
+//var res2 = solver.IsSymmetric(p2);
 
-var p3 = new TreeNode(2,
-    new TreeNode(5),
-    new TreeNode(5));
+//var p3 = new TreeNode(2,
+//    new TreeNode(5),
+//    new TreeNode(5));
 
-var res3 = solver.IsSymmetric(p3);
+//var res3 = solver.IsSymmetric(p3);
 
-var p4 = new TreeNode(2,
-    new TreeNode(5),
-    null);
+//var p4 = new TreeNode(2,
+//    new TreeNode(5),
+//    null);
 
-var res4 = solver.IsSymmetric(p4);
+//var res4 = solver.IsSymmetric(p4);
 
-TreeNode p5 = new TreeNode(5,
-    new TreeNode(4,
-        new TreeNode(11,
-            new TreeNode(7),
-            new TreeNode(2)
+//TreeNode p5 = new TreeNode(5,
+//    new TreeNode(4,
+//        new TreeNode(11,
+//            new TreeNode(7),
+//            new TreeNode(2)
 
-        ),
-        null
-    ),
-    new TreeNode(4,
-        null,
-        new TreeNode(11,
-            new TreeNode(2),
-            new TreeNode(7)
-        )
-    )
-);
-var res5 = solver.IsSymmetric(p5);
+//        ),
+//        null
+//    ),
+//    new TreeNode(4,
+//        null,
+//        new TreeNode(11,
+//            new TreeNode(2),
+//            new TreeNode(7)
+//        )
+//    )
+//);
+//var res5 = solver.IsSymmetric(p5);
+
+//TreeNode p6 = new TreeNode(5,
+//    new TreeNode(4,
+//        new TreeNode(11,
+//            new TreeNode(7),
+//            new TreeNode(2)
+
+//        ),
+//        null
+//    ),
+//    new TreeNode(4,
+//        null,
+//        new TreeNode(11,
+//            null,
+//            new TreeNode(7)
+//        )
+//    )
+//);
+//var res6 = solver.IsSymmetric(p6);
+
+var solver = new BalancedBinaryTreeSolver();
+
+var root1 = new TreeNode(0);
+var res1 = solver.IsBalanced(root1);
 
 TreeNode p6 = new TreeNode(5,
     new TreeNode(4,
@@ -610,5 +634,7 @@ TreeNode p6 = new TreeNode(5,
         )
     )
 );
-var res6 = solver.IsSymmetric(p6);
+
+var res2 = solver.IsBalanced(p6);
+
 ;
