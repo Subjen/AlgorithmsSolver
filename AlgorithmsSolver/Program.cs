@@ -453,69 +453,126 @@ using AlgorithmsSolver.Dictionary;
 //var res3 = solver.CharacterReplacement("AABABBA", 2);
 //var res4 = solver.CharacterReplacement("ABAA", 0);
 
-var solver = new SameTreeSolver();
-var res1 = solver.IsSameTree(null, null);
+//var solver = new SameTreeSolver();
+//var res1 = solver.IsSameTree(null, null);
 
-var p2 = new TreeNode(2);
-TreeNode q2 = null;
-var res2 = solver.IsSameTree(p2, q2);
+//var p2 = new TreeNode(2);
+//TreeNode q2 = null;
+//var res2 = solver.IsSameTree(p2, q2);
 
 
-var p3 = new TreeNode(2);
-TreeNode q3 = new TreeNode(5,
-    new TreeNode(4,
-        new TreeNode(11,
-            new TreeNode(7),
-            new TreeNode(2)
+//var p3 = new TreeNode(2);
+//TreeNode q3 = new TreeNode(5,
+//    new TreeNode(4,
+//        new TreeNode(11,
+//            new TreeNode(7),
+//            new TreeNode(2)
 
-        ),
-        null
-    ),
-    new TreeNode(8,
-        new TreeNode(13),
-        new TreeNode(4,
-            new TreeNode(5),
-            new TreeNode(1)
-        )
-    )
-);
-var res3 = solver.IsSameTree(p3, q3);
+//        ),
+//        null
+//    ),
+//    new TreeNode(8,
+//        new TreeNode(13),
+//        new TreeNode(4,
+//            new TreeNode(5),
+//            new TreeNode(1)
+//        )
+//    )
+//);
+//var res3 = solver.IsSameTree(p3, q3);
 
-TreeNode p4 = new TreeNode(5,
-    new TreeNode(4,
-        new TreeNode(11,
-            new TreeNode(7),
-            new TreeNode(2)
+//TreeNode p4 = new TreeNode(5,
+//    new TreeNode(4,
+//        new TreeNode(11,
+//            new TreeNode(7),
+//            new TreeNode(2)
 
-        ),
-        null
-    ),
-    new TreeNode(8,
-        new TreeNode(13),
-        new TreeNode(4,
-            new TreeNode(5),
-            new TreeNode(1)
-        )
-    )
-);
-TreeNode q4 = new TreeNode(5,
-    new TreeNode(4,
-        new TreeNode(11,
-            new TreeNode(7),
-            new TreeNode(2)
+//        ),
+//        null
+//    ),
+//    new TreeNode(8,
+//        new TreeNode(13),
+//        new TreeNode(4,
+//            new TreeNode(5),
+//            new TreeNode(1)
+//        )
+//    )
+//);
+//TreeNode q4 = new TreeNode(5,
+//    new TreeNode(4,
+//        new TreeNode(11,
+//            new TreeNode(7),
+//            new TreeNode(2)
 
-        ),
-        null
-    ),
-    new TreeNode(8,
-        new TreeNode(13),
-        new TreeNode(4,
-            new TreeNode(5),
-            new TreeNode(1)
-        )
-    )
-);
-var res4 = solver.IsSameTree(p4, q4);
+//        ),
+//        null
+//    ),
+//    new TreeNode(8,
+//        new TreeNode(13),
+//        new TreeNode(4,
+//            new TreeNode(5),
+//            new TreeNode(1)
+//        )
+//    )
+//);
+//var res4 = solver.IsSameTree(p4, q4);
+
+//TreeNode p5 = new TreeNode(5,
+//    new TreeNode(4,
+//        new TreeNode(11,
+//            new TreeNode(7),
+//            new TreeNode(2)
+
+//        ),
+//        null
+//    ),
+//    new TreeNode(8,
+//        new TreeNode(13),
+//        new TreeNode(4,
+//            new TreeNode(5),
+//            null
+//        )
+//    )
+//);
+//TreeNode q5 = new TreeNode(5,
+//    new TreeNode(4,
+//        new TreeNode(11,
+//            new TreeNode(7),
+//            new TreeNode(2)
+
+//        ),
+//        null
+//    ),
+//    new TreeNode(8,
+//        new TreeNode(13),
+//        new TreeNode(4,
+//            new TreeNode(5),
+//            new TreeNode(1)
+//        )
+//    )
+//);
+//var res5 = solver.IsSameTree(p5, q5);
+
+var solver = new SymmetricTreeSolver();
+var res1 = solver.IsSymmetric(new TreeNode(2));
+
+var p2 = new TreeNode(2,
+    new TreeNode(5),
+    new TreeNode(6));
+
+var res2 = solver.IsSymmetric(p2);
+
+var p3 = new TreeNode(2,
+    new TreeNode(5),
+    new TreeNode(5));
+
+var res3 = solver.IsSymmetric(p3);
+
+var p4 = new TreeNode(2,
+    new TreeNode(5),
+    null);
+
+var res4 = solver.IsSymmetric(p4);
 
 TreeNode p5 = new TreeNode(5,
     new TreeNode(4,
@@ -526,15 +583,17 @@ TreeNode p5 = new TreeNode(5,
         ),
         null
     ),
-    new TreeNode(8,
-        new TreeNode(13),
-        new TreeNode(4,
-            new TreeNode(5),
-            null
+    new TreeNode(4,
+        null,
+        new TreeNode(11,
+            new TreeNode(2),
+            new TreeNode(7)
         )
     )
 );
-TreeNode q5 = new TreeNode(5,
+var res5 = solver.IsSymmetric(p5);
+
+TreeNode p6 = new TreeNode(5,
     new TreeNode(4,
         new TreeNode(11,
             new TreeNode(7),
@@ -543,13 +602,13 @@ TreeNode q5 = new TreeNode(5,
         ),
         null
     ),
-    new TreeNode(8,
-        new TreeNode(13),
-        new TreeNode(4,
-            new TreeNode(5),
-            new TreeNode(1)
+    new TreeNode(4,
+        null,
+        new TreeNode(11,
+            null,
+            new TreeNode(7)
         )
     )
 );
-var res5 = solver.IsSameTree(p5, q5);
+var res6 = solver.IsSymmetric(p6);
 ;
