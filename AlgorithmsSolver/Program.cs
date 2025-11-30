@@ -612,29 +612,37 @@ using AlgorithmsSolver.Dictionary;
 //);
 //var res6 = solver.IsSymmetric(p6);
 
-var solver = new BalancedBinaryTreeSolver();
+//var solver = new BalancedBinaryTreeSolver();
 
-var root1 = new TreeNode(0);
-var res1 = solver.IsBalanced(root1);
+//var root1 = new TreeNode(0);
+//var res1 = solver.IsBalanced(root1);
 
-TreeNode p6 = new TreeNode(5,
-    new TreeNode(4,
-        new TreeNode(11,
-            new TreeNode(7),
-            new TreeNode(2)
+//TreeNode p6 = new TreeNode(5,
+//    new TreeNode(4,
+//        new TreeNode(11,
+//            new TreeNode(7),
+//            new TreeNode(2)
 
-        ),
-        null
-    ),
-    new TreeNode(4,
-        null,
-        new TreeNode(11,
-            null,
-            new TreeNode(7)
-        )
-    )
-);
+//        ),
+//        null
+//    ),
+//    new TreeNode(4,
+//        null,
+//        new TreeNode(11,
+//            null,
+//            new TreeNode(7)
+//        )
+//    )
+//);
 
-var res2 = solver.IsBalanced(p6);
+//var res2 = solver.IsBalanced(p6);
+
+var solver = new BestTimetoBuyandSellStockwithCooldownSolver();
+
+var res1 = solver.MaxProfit([1, 2, 3, 0, 2]);
+var res2 = solver.MaxProfit([1]);
+var res3 = solver.MaxProfit([4, 3, 2, 10, 11, 0, 11]);
+var res4 = solver.MaxProfit([1, 2, 4]);
+var res5 = solver.MaxProfit([4, 2, 1]);
 
 ;
