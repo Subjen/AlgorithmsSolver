@@ -637,12 +637,16 @@ using AlgorithmsSolver.Dictionary;
 
 //var res2 = solver.IsBalanced(p6);
 
-var solver = new BestTimetoBuyandSellStockwithCooldownSolver();
+//var solver = new BestTimetoBuyandSellStockwithCooldownSolver();
 
-var res1 = solver.MaxProfit([1, 2, 3, 0, 2]);
-var res2 = solver.MaxProfit([1]);
-var res3 = solver.MaxProfit([4, 3, 2, 10, 11, 0, 11]);
-var res4 = solver.MaxProfit([1, 2, 4]);
-var res5 = solver.MaxProfit([4, 2, 1]);
+//var res1 = solver.MaxProfit([1, 2, 3, 0, 2]);
+//var res2 = solver.MaxProfit([1]);
+//var res3 = solver.MaxProfit([4, 3, 2, 10, 11, 0, 11]);
+//var res4 = solver.MaxProfit([1, 2, 4]);
+//var res5 = solver.MaxProfit([4, 2, 1]);
+
+var solver = new WordLadderSolver();
+
+var res1 = solver.LadderLength("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]);
 
 ;
